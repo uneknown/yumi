@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "wrangler dev",
     "build": "wrangler build",
-    "publish": "wrangler publish"
+    "deploy": "wrangler publish --minify --name yumi"
   },
   "repository": {
     "type": "git",
