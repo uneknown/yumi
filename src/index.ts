@@ -63,4 +63,4 @@ const parseSize = (size: string) => {
 	return 120
 };
 
-export default app
+export default app;
