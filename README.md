@@ -7,5 +7,5 @@ A fast, high-performance avatar generator based on Cloudflare Workers 🌱
 - [ ] Implement image generator
 - [ ] Improve performance
 - [ ] Add unit tests
-- [ ] Add benchmarks
+- [x] Add benchmarks
 - [ ] Add documentation
