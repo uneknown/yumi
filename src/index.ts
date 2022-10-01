@@ -1,4 +1,5 @@
 import { Hono } from 'hono';
+import { cache } from 'hono/cache'
 import ColorHash from "color-hash";
 
 const app = new Hono();
@@ -7,6 +8,8 @@ app.use('*', async (c, next) => {
 	await next()
 	c.header('x-powered-by', 'uneknown')
 });
+
+app.get('*', cache({ cacheName: 'yumi', cacheControl: 'max-age=3600' }))
 
 app.get('/:name', async (c) => {
 	const name = c.req.param('name');
